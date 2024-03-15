@@ -1,0 +1,11 @@
+CREATE TABLE `staffs` (
+	`UserId` INT AUTO_INCREMENT NOT NULL,
+	`PostId` INT NOT NULL,
+	`NameSei` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+	`NameMei` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+	`Age` INT NOT NULL,
+	`Tell` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL UNIQUE,
+	`Address` VARCHAR(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci UNIQUE,
+	`password` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+	PRIMARY KEY (`UserId`)
+);
